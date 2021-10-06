@@ -1,0 +1,50 @@
+<!--HEADER-->
+<header class="header header_fixed@@if(context.headerFix === 'no'){ header_not_fixed }">
+  <div class="layout-page layout-page-spaces">
+    <div class="header-container">
+      <div class="header-container__left">
+        <div class="logo">
+          <div class="logo_dark"><img src="img/logo.svg" alt=""></div>
+          <div class="logo_light"><img src="img/logo-alt.svg" alt=""></div>
+          @@if(context.currentItem === "Home"){<span class="logo-js"><span>HIGH CORE games</span></span>}
+          @@if(context.currentItem !== "Home"){<a href="index.html" title="Go home"></a>}
+          <!--logo for a print version-->
+          <img style="display: none;" src="img/logo.svg" alt="Print version logotype">
+        </div>
+      </div>
+
+      <div class="header-container__wrapper">
+        <div class="header-container__right">
+          <a href="#mainNav" class="nav-opener nav-opener-js">Open menu</a>
+          <div class="nav-wrap" id="mainNav">
+            <div class="nav-header">
+              @@if(context.currentItem != 'Home'){<a href="index.html" class="logo-nav" title="HIGH CORE games">HIGH
+                CORE games</a>}
+              @@if(context.currentItem == 'Home'){<span class="logo-nav">HIGH CORE games</span>}
+              <a href="#" class="nav-close-btn nav-close-btn-js">Close menu</a>
+            </div>
+            <nav class="nav">
+              <ul class="nav__list nav-js">
+                @@if(context.currentItem != 'Home'){<li><a href="index.html">Home</a></li>}
+
+                @@if(context.currentItem == 'About'){<li class="current"><span>About</span></li>}
+                @@if(context.currentItem != 'About'){<li><a href="#">About</a></li>}
+
+                @@if(context.currentItem == 'Career'){<li class="current"><span>Career</span>}
+                @@if(context.currentItem != 'Career'){<li><a href="#">Career</a></li>}
+
+                @@if(context.currentItem == 'News'){<li class="current"><span>News</span>}
+                @@if(context.currentItem != 'News'){<li><a href="#">News</a></li>}
+              </ul>
+            </nav>
+          </div>
+          <div class="nav-overlay"></div>
+        </div>
+        <div class="lang">
+          <a class="lang__inner" href="#"><span>Ru</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--HEADER end-->

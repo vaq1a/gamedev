@@ -1,0 +1,27 @@
+@import "../utils/mixins";
+
+// =============================================================================
+// Google Fonts
+// =============================================================================
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+// =============================================================================
+// Font Face
+// =============================================================================
+
+// Avenir Next
+// ----------------------------------------------------
+@include font-face("avenir-next-cyr-regular", "../fonts/AvenirNextCyr/AvenirNextCyr-Regular", normal, normal, eot ttf woff);
+@include font-face("avenir-next-cyr-medium", "../fonts/AvenirNextCyr/AvenirNextCyr-Medium", normal, normal, eot ttf woff);
+@include font-face("avenir-next-cyr-bold", "../fonts/AvenirNextCyr/AvenirNextCyr-Bold", normal, normal, eot ttf woff);
+@include font-face("avenir-next-cyr-demi", "../fonts/AvenirNextCyr/AvenirNextCyr-Demi", normal, normal, eot ttf woff);
+
+// Circe
+// ----------------------------------------------------
+@include font-face("circe-regular", "../fonts/Circe/Circe-Regular", normal, normal, ttf);
+@include font-face("circe-extra-bold", "../fonts/Circe/Circe-ExtraBold", normal, normal, ttf);
+
+// Gilroy
+// ----------------------------------------------------
+@include font-face("gilroy-bold", "../fonts/Gilroy/gilroy-bold", normal, normal, eot ttf woff);
+@include font-face("gilroy-medium", "../fonts/Gilroy/gilroy-medium", normal, normal, eot ttf woff);

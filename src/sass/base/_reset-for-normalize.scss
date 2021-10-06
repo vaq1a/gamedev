@@ -1,0 +1,65 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+@import "../../libs/include-media/dist/include-media";
+
+blockquote,
+q {
+  quotes: none;
+
+  &::before,
+  &::after {
+    content: none;
+  }
+}
+
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+fieldset,
+table,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+table {
+  width: 100%;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: none;
+  counter-reset: item;
+}
+
+ol>li:before {
+  font-size: 10px;
+  color: #fff;
+  content: counter(item);
+  counter-increment: item;
+  background-color: #3F3F3F;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  line-height: 18px;
+  margin-right: 10px;
+  vertical-align: 0.3rem;
+}
+
+ol+p+ol {
+  counter-reset: tem;
+}
+
+/* reset end */
