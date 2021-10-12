@@ -5372,6 +5372,7 @@ input[type='file'] {
   .footer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    gap: 1.4rem;
   }
 }
 
@@ -5387,8 +5388,8 @@ input[type='file'] {
 
 @media (max-width: 991px) {
   .footer .footer__highcore {
-    margin-right: 1.4rem;
-    margin-bottom: 0.9rem;
+    -ms-flex-order: -2;
+        order: -2;
   }
 }
 
@@ -5405,10 +5406,8 @@ input[type='file'] {
 
 @media (max-width: 991px) {
   .footer .footer__link:last-child {
-    -ms-flex-order: 2;
-        order: 2;
-    margin-right: 1.4rem;
-    margin-bottom: 0.9rem;
+    -ms-flex-order: -1;
+        order: -1;
   }
 }
 

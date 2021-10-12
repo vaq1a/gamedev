@@ -4244,6 +4244,7 @@ input[type='file'] {
 
   @include media("<tab") {
     flex-wrap: wrap;
+    gap: 1.4rem;
   }
 
   .footer__highcore {
@@ -4256,8 +4257,7 @@ input[type='file'] {
     text-transform: uppercase;
 
     @include media("<tab") {
-      margin-right: 1.4rem;
-      margin-bottom: 0.9rem;
+      order: -2;
     }
   }
 
@@ -4273,9 +4273,7 @@ input[type='file'] {
 
     &:last-child {
       @include media("<tab") {
-        order: 2;
-        margin-right: 1.4rem;
-        margin-bottom: 0.9rem;
+        order: -1;
       }
     }
   }
