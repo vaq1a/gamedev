@@ -4107,6 +4107,12 @@ input[type='file'] {
     color: #F2F2F2;
     position: relative;
     z-index: 9;
+
+    @include media("<tab") {
+      font-size: 7.3rem;
+      line-height: 7.5rem;
+      margin-bottom: 4rem;
+    }
   }
 
   .c-page-main-simple-header__subtitle {
@@ -4117,6 +4123,11 @@ input[type='file'] {
     text-transform: uppercase;
     color: #000;
     text-align: right;
+
+    @include media("<tab") {
+      font-size: 9.4rem;
+      line-height: 6.4rem;
+    }
   }
 }
 
@@ -4124,6 +4135,10 @@ input[type='file'] {
   position: relative;
   height: 0;
   padding-bottom: 51.34%;
+
+  @include media("<tab") {
+    padding-bottom: 90.313%;
+  }
 
   .c-page-main-full-header__bg-image {
     position: absolute;
@@ -4142,12 +4157,22 @@ input[type='file'] {
     left: 50%;
     transform: translateX(-50%);
 
+    @include media("<tab") {
+      bottom: 1.9rem;
+    }
+
     .c-page-main-full-header__title {
       @include font-bold;
       font-size: 3.6rem;
       line-height: 4rem;
       color: #FFFFFF;
       text-align: right;
+
+      @include media("<tab") {
+        font-size: 2rem;
+        line-height: 2.4rem;
+        margin: 0 2rem;
+      }
     }
   }
 }
@@ -4166,6 +4191,10 @@ input[type='file'] {
     bottom: 0;
     left: -2%;
     z-index: -1;
+
+    @include media("<tab") {
+      content: "";
+    }
   }
 }
 
@@ -4177,10 +4206,18 @@ input[type='file'] {
     &:first-child {
       margin-top: 4rem;
       margin-left: 5.4rem;
+
+      @include media("<tab") {
+        display: none;
+      }
     }
 
     &:not(:last-child) {
       margin-right: 9.3rem;
+
+      @include media("<tab") {
+        margin-right: 0;
+      }
     }
   }
 }
@@ -4192,6 +4229,10 @@ input[type='file'] {
   .news-list-grid__item {
     max-width: 50%;
     width: 100%;
+
+    @include media("<tab") {
+      max-width: 100%;
+    }
   }
 }
 
@@ -4201,6 +4242,10 @@ input[type='file'] {
   justify-content: space-between;
   padding: 3rem 0;
 
+  @include media("<tab") {
+    flex-wrap: wrap;
+  }
+
   .footer__highcore {
     @include font-alt-normal;
     font-size: 1rem;
@@ -4209,6 +4254,11 @@ input[type='file'] {
     color: rgba(255, 255, 255, 0.312773);
     text-decoration: none;
     text-transform: uppercase;
+
+    @include media("<tab") {
+      margin-right: 1.4rem;
+      margin-bottom: 0.9rem;
+    }
   }
 
   .footer__link {
@@ -4220,6 +4270,14 @@ input[type='file'] {
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
+
+    &:last-child {
+      @include media("<tab") {
+        order: 2;
+        margin-right: 1.4rem;
+        margin-bottom: 0.9rem;
+      }
+    }
   }
 }
 
@@ -4272,7 +4330,11 @@ input[type='file'] {
     padding: 2.2rem 1.7rem;
     border: 1px solid #888888;
 
-    .new-preview__content-title {
+    @include media("<tab") {
+      padding: 1.6rem 1.2rem;
+    }
+
+    .new-preview__content-link {
       flex-grow: 1;
       @include font-gilroy-bold;
       font-weight: bold;
@@ -4280,6 +4342,12 @@ input[type='file'] {
       line-height: 2.4rem;
       margin-bottom: 6rem;
       color: #000;
+
+      @include media("<tab") {
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        margin-bottom: 1.9rem;
+      }
     }
 
     .new-preview__content-date {
@@ -4287,6 +4355,12 @@ input[type='file'] {
       line-height: 2.6rem;
       letter-spacing: 3px;
       color: #000000;
+
+      @include media("<tab") {
+        font-size: 1rem;
+        line-height: 1.8rem;
+        letter-spacing: 2.1px;
+      }
     }
   }
 }
@@ -4297,12 +4371,24 @@ input[type='file'] {
   background-color: #fff;
   padding: 4rem 1.5rem 4rem 9.3rem;
 
+  @include media("<tab") {
+    flex-wrap: wrap;
+    padding: 4rem 2rem;
+  }
+
   .news-card__date {
     @include font-norm-reg;
     font-size: 1.4rem;
     line-height: 2.5rem;
     color: #000000;
     margin-right: 4.8rem;
+
+    @include media("<tab") {
+      font-size: 1.2rem;
+      line-height: 2.5rem;
+      margin-right: 0;
+      margin-bottom: 1.5rem;
+    }
   }
 
   .news-card__content {
@@ -4312,6 +4398,12 @@ input[type='file'] {
       line-height: 2.5rem;
       color: #8C8C8C;
       margin-bottom: 2.6rem;
+
+      @include media("<tab") {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        margin-bottom: 2rem;
+      }
     }
 
     a {
@@ -4322,12 +4414,20 @@ input[type='file'] {
       line-height: 2.6rem;
       text-decoration: underline;
       margin-bottom: 2.6rem;
+
+      @include media("<tab") {
+        margin-bottom: 4rem;
+      }
     }
 
     img {
       width: 100%;
       height: auto;
       margin-bottom: 2.6rem;
+
+      @include media("<tab") {
+        margin-bottom: 2rem;
+      }
     }
   }
 }
