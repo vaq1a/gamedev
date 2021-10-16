@@ -5205,7 +5205,7 @@ input[type='file'] {
   padding-top: 17rem;
 }
 
-.c-page-main-simple-header .c-page-main-simple-header__title {
+.c-page-main-header .c-page-main-header__title {
   font-family: "avenir-next-cyr-bold", Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 6.0833rem;
@@ -5216,14 +5216,14 @@ input[type='file'] {
 }
 
 @media (max-width: 991px) {
-  .c-page-main-simple-header .c-page-main-simple-header__title {
+  .c-page-main-header .c-page-main-header__title {
     font-size: 7.3rem;
     line-height: 7.5rem;
     margin-bottom: 4rem;
   }
 }
 
-.c-page-main-simple-header .c-page-main-simple-header__subtitle {
+.c-page-main-header .c-page-main-header__subtitle {
   font-family: "circe-extra-bold", Helvetica, Arial, sans-serif;
   font-weight: normal;
   text-shadow: 1px 1px 0 #373737, 1px -1px 0 #373737, -1px 1px 0 #373737, -1px -1px 0 #373737, 1px 0px 0 #373737, 0px 1px 0 #373737, -1px 0px 0 #373737, 0px -1px 0 #373737;
@@ -5235,50 +5235,13 @@ input[type='file'] {
 }
 
 @media (max-width: 991px) {
-  .c-page-main-simple-header .c-page-main-simple-header__subtitle {
+  .c-page-main-header .c-page-main-header__subtitle {
     font-size: 9.4rem;
     line-height: 6.4rem;
   }
 }
 
-.c-page-main-full-header {
-  position: relative;
-  height: 0;
-  padding-bottom: 51.34%;
-}
-
-@media (max-width: 991px) {
-  .c-page-main-full-header {
-    padding-bottom: 90.313%;
-  }
-}
-
-.c-page-main-full-header .c-page-main-full-header__bg-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c-page-main-full-header .c-page-main-full-header__title-wrapper {
-  width: 100%;
-  position: absolute;
-  bottom: 7rem;
-  left: 50%;
-  -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
-}
-
-@media (max-width: 991px) {
-  .c-page-main-full-header .c-page-main-full-header__title-wrapper {
-    bottom: 1.9rem;
-  }
-}
-
-.c-page-main-full-header .c-page-main-full-header__title-wrapper .c-page-main-full-header__title {
+.c-page-main-header .c-page-main-header__article-title {
   font-family: "avenir-next-cyr-bold", Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 3.6rem;
@@ -5288,10 +5251,32 @@ input[type='file'] {
 }
 
 @media (max-width: 991px) {
-  .c-page-main-full-header .c-page-main-full-header__title-wrapper .c-page-main-full-header__title {
+  .c-page-main-header .c-page-main-header__article-title {
     font-size: 2rem;
     line-height: 2.4rem;
-    margin: 0 2rem;
+    text-align: left;
+  }
+}
+
+.c-page-main-header-background {
+  background-image: url("../img/news/main-preview-news-item.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: end;
+      justify-content: end;
+  padding: 7rem 0;
+}
+
+@media (max-width: 991px) {
+  .c-page-main-header-background {
+    height: 80vh;
+    padding: 2rem 0;
   }
 }
 
