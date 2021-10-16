@@ -5275,7 +5275,7 @@ input[type='file'] {
 
 @media (max-width: 991px) {
   .c-page-main-header-background {
-    height: 80vh;
+    height: 65vh;
     padding: 2rem 0;
   }
 }
