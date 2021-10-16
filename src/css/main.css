@@ -5269,7 +5269,7 @@ input[type='file'] {
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: end;
-      justify-content: end;
+      justify-content: flex-end;
   padding: 7rem 0;
 }
 
