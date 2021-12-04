@@ -212,6 +212,7 @@ gulp.task('copyLibsScriptsToJs', ['copyJqueryToJs'], function () {
       'src/libs/jquery-smartresize/jquery.debouncedresize.js', // "умный" ресайз
       'src/libs/fullpage.js/dist/fullpage.min.js', // постраничный скролл
       'src/libs/slick-carousel/slick/slick.min.js', // slick slider
+      'src/libs/jquery-circular-carousel/jquery.circular-carousel.js', // jquery-circular-carousel
       'src/libs/wowjs/dist/wow.min.js', // wow animation
       'src/libs/jquery.nicescroll/dist/jquery.nicescroll.min.js', // nicescroll
       'src/libs/rellax/rellax.min.js', // parallax animation

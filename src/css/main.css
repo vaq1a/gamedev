@@ -5573,6 +5573,58 @@ input[type='file'] {
   }
 }
 
+.carousel-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*slider*/
+.main-carousel-item.active {
+  position: relative;
+}
+
+.main-carousel-item__slide-bg {
+  position: absolute;
+  top: -25%;
+  z-index: -1;
+}
+
+/*content*/
+.content-block-item {
+  display: none;
+}
+
+.content-block-item p {
+  color: #fff;
+}
+
+.content-block-item.active {
+  display: block;
+}
+
+.content-block-item .content-block-item__title {
+  color: #fff;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 206px;
+}
+
+.main-carousel .main-carousel-item {
+  display: block;
+  position: absolute;
+  -ms-transform: scale(0.5);
+      transform: scale(0.5);
+}
+
+.main-carousel .main-carousel-item.active {
+  -ms-transform: scale(1);
+      transform: scale(1);
+}
+
+.main-carousel .main-carousel-item.transition {
+  transition: all 0.35s ease;
+}
+
 @media print {
   h1, h2, h3, h4, h5, h6,
   .h1, .h2, .h3, .h4, .h5, .h6,
